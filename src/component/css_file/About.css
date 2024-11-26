@@ -1,0 +1,102 @@
+/* About Container */
+.about-container {
+    text-align: center;
+    background-color: #f9f9f9;
+    /* Unified background color */
+    max-width: 800px;
+    margin: 50px auto;
+    margin-top: 110px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect */
+.about-container:hover {
+    transform: translateY(-10px);
+    /* Slightly stronger hover effect */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow */
+}
+
+/* Header text 1 */
+.header-text-1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(138, 15, 15);
+    text-shadow: 2px 2px 3px rgba(0, 128, 0, 0.6), 3px 3px 4px rgba(0, 0, 255, 0.5);
+    /* Multi-colored shadow for emphasis */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1.5s steps(15) 0s 1 normal both, blink 0.75s step-end infinite;
+    margin-bottom: 20px;
+    /* Space between the header and description */
+}
+
+/* Header text 2 */
+.header-text-2 {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    margin-top: 0.5rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-in 0.2s forwards;
+}
+
+/* Ensure last child has no margin */
+.header-text-2:last-child {
+    margin-bottom: 0;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        width: 90%;
+        padding: 20px;
+        margin-top: 110px;
+        /* Adjust margin-top for smaller screens */
+    }
+
+    .header-text-1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        /* Adjust spacing for smaller screens */
+    }
+
+    .header-text-2 {
+        font-size: 16px;
+        margin-bottom: 15px;
+        /* Ensures consistent spacing */
+    }
+}
+
+/* Keyframes for typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

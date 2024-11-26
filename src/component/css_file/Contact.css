@@ -1,0 +1,186 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #ffffff; /* Light background color for the contact section */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for smooth appearance */
+    max-width: 800px;
+    margin: 40px auto;
+    margin-top: 110px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+    position: relative; /* Change to relative positioning */
+}
+
+.contact:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+.contact-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(138, 15, 15); /* Dark red text color */
+    text-shadow: 2px 2px 4px rgba(0, 128, 0, 0.6), 3px 3px 6px rgba(0, 0, 255, 0.5); /* Green and blue shadows */
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1.5s steps(15) 0s 1 normal both, blink 0.75s step-end infinite; /* Fast typing animation */
+}
+
+.contact-text {
+    font-size: 1.2rem;
+    color: #666; /* Subtle text color */
+    margin-bottom: 20px;
+    margin-top: 0.5rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-in 0.2s forwards; /* Fade-in effect for the contact text */
+}
+
+.contact-email {
+    color: #0066cc; /* Blue color for email link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for email color */
+}
+
+.contact-email:hover {
+    color: #004d99; /* Darker blue color on hover */
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .contact-header {
+        font-size: 2rem;
+    }
+
+    .contact-text {
+        font-size: 1rem;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    /* Light background color for the contact section */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Soft shadow for smooth appearance */
+    max-width: 800px;
+    margin: 40px auto;
+    margin-top: 110px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for transform and box-shadow */
+    position: relative;
+    /* Change to relative positioning */
+}
+
+.contact:hover {
+    transform: translateY(-5px);
+    /* Slight upward movement on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    /* Stronger shadow on hover */
+}
+
+.contact-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(138, 15, 15);
+    /* Dark red text color */
+    text-shadow: 2px 2px 4px rgba(0, 128, 0, 0.6), 3px 3px 6px rgba(0, 0, 255, 0.5);
+    /* Green and blue shadows */
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1.5s steps(15) 0s 1 normal both, blink 0.75s step-end infinite;
+    /* Fast typing animation */
+}
+
+.contact-text {
+    font-size: 1.2rem;
+    color: #666;
+    /* Subtle text color */
+    margin-bottom: 20px;
+    margin-top: 0.5rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-in 0.2s forwards;
+    /* Fade-in effect for the contact text */
+}
+
+.contact-email {
+    color: #0066cc;
+    /* Blue color for email link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* Smooth transition for email color */
+}
+
+.contact-email:hover {
+    color: #004d99;
+    /* Darker blue color on hover */
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .contact-header {
+        font-size: 2rem;
+    }
+
+    .contact-text {
+        font-size: 1rem;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
