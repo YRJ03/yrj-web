@@ -9,7 +9,7 @@ const Header = () => {
           <img src="./images/my_pic.jpg" alt="my pic" className='my-pic'/>
         </div>
         <div className="user-dec">
-          <span className="line">Fronted Developer (React)</span>
+          <span className="line">Fronted Web Developer (React)</span>
         </div>
       </a>
     </header>
